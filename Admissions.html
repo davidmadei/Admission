@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,9 +8,76 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="css/admissions.css">
+    <style>
+    .bg-text{
+   color: black;
+   font-weight: bold;
+   font-size: 20px;
+   position: fixed;
+   top: 50%;
+   left:90%;
+   transform: translate(-50%, -50%);
+   z-index:2;
+   width: 300px;
+   text-align: center;
+   overflow-y: hidden;
+    }
+
+    .bg-text a{
+        overflow-y: hidden;
+    }
+
+    .txt-footer{
+        /* padding: 20% 0; */
+        line-height: 1.8em;
+    }  
+    .home a{
+    margin-left: 14.7px;
+    opacity: 1;
+    overflow-y: hidden;
+    }
+    
+    .service a{
+    margin-right:px;
+    opacity: 1;
+    overflow-y: hidden;
+    }
+    
+    .team a{
+    margin-left: 19.5px;
+    opacity: 1;
+    overflow-y: hidden;
+    }
+    
+    .About a{
+    margin-left: 14px;
+    opacity: 1;
+    overflow-y: hidden;
+    }
+    
+    .contact a{
+    margin-right: 4px;
+    opacity: 1;
+    overflow-y: hidden;
+    }
+    
+    label{
+    opacity: 0;
+    padding:15px;
+    }
+    label:hover{
+    opacity: 1;
+    }
+    h1{ text-align: center; color: #012646 ; font-family: Arial, Helvetica, sans-serif; padding: 50px 0;}
+    p{ width: 63%; margin-left: 20%; font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding: 10px 0;
+    }
+    </style>
 </head>
 <body>
-    
+   <header>
     <img src="logo/faithlogo.png" style="position:absolute; left: 270px; top: 15px;">
 
     <div class="navbar">
@@ -49,8 +116,8 @@
                 </div>
                 
                 <div class="dropdown-content">
-                    <a href="#">Tuition and applications</a>
-                    <a href="#">Transportation</a>
+                    <a href="#tuition">Tuition and applications</a>
+                    <a href="#transport">Transportation</a>
                     <a href="#">Before and after school care</a>
                 </div>
             </div>
@@ -82,12 +149,52 @@
             <a style="color: rgb(56,56,62);" href="#">EMPLOYMENT</a>
             <a style="color: rgb(56,56,62);" href="#">CONTACT</a>
     </div>
+    <div class="bg-image">
+        <h1>ADMISSIONS</h1>
+    </div>
+   </header>
+
     <div class="main">
-        <div class="bg-image">
-            <h1>ADMISSIONS</h1>
+       
+        <div class="tuition" id="tuition">
+            <p>TUITION + APPLICATION PACKAGE</p>
+            <span class="ln-1">Faith Academy is now accepting applications for the 2022 - 2023 school year.<br>
+                The 2022 - 2023 <span style="font-style: italic;">Application Package</span>  and <span style="font-style: italic;">Fee Schedule</span> are available below. <br>
+                The early application deadline is set for March 18, 2022.
+            </span><br>
+            <span class="ln-2">
+                Please note that due to COVID-19 restrictions, we will be collecting all application fees together with the registration payments <br>
+                in July - no application fee payment is due upon the submission of the 2022 - 2023 application. <br>
+                In addition, we are asking that applications be submitted as a scanned PDF (with signatures) when possible or delivered to the <br>
+                mail slots available at each campus - please do not enter the school building to submit your application.
+            </span>
+
+            <div>
+                <p>Download the following documents:</p>
+                <span>You must have Adobe Reader to view and print the forms.</span>
+                <div class="images">
+                    <div class="img1"><a href="https://www.faithacademy.ca/_files/ugd/d09c18_8ecc71e0630f4f3ba791d42f4dcbfbd0.pdf"><img src="./images/40d80b8089c8418a961cb75d96d491f7.webp" ></a><br><a href="https://www.faithacademy.ca/_files/ugd/d09c18_8ecc71e0630f4f3ba791d42f4dcbfbd0.pdf">2022-2023 <br> FEE SCHEDULE</a></div>
+                    <div class="img2"><a href="https://www.faithacademy.ca/_files/ugd/d09c18_75897f8600f84b68b765b7d7213f3efb.pdf"><img src="./images/40d80b8089c8418a961cb75d96d491f7.webp" ></a><br><a href="https://www.faithacademy.ca/_files/ugd/d09c18_75897f8600f84b68b765b7d7213f3efb.pdf">2022-2023 <br> APPLICATION <br> PACKAGE</a></div>
+                    <div class="img3"><a href="https://www.faithacademy.ca/_files/ugd/a8928b_d15fb67468dc4fd09e58260b35965749.pdf"><img src="./images/40d80b8089c8418a961cb75d96d491f7.webp" ></a><br><a href="https://www.faithacademy.ca/_files/ugd/a8928b_d15fb67468dc4fd09e58260b35965749.pdf">FAITH ACADEMY <br>SCHOOL GUIDE</a></div>
+                </div>
+
+                <div class="list">
+                    <li>Priority admission will be given to students with siblings already attending Faith Academy.</li>
+                    <li>New students must submit a copy of their most recent report card, photo, and birth certificate.</li>
+                    <li>Any students applying for Grades 7 – 12 will also need to complete the Supplementary Application Form which is contained in the Application Package.</li>
+                    <li>Completed form(s) can be emailed, faxed (204-582-2616), or dropped off at any of the school’s offices.
+                        <li>Kindergarten to Grade 8 registration inquiries, contact Chris Franczyk, Director of Student Services, ph: 204-582-3400.</li>
+                        <li>For High School registration inquiries, contact the High School Office, ph:204-582-3400.</li>
+                    </li>
+                    <li>The registration fee must be paid before students begin attending school on the first day of school.</li>
+                    <li>Please note that no student should hesitate to apply because the family cannot afford tuition.</li>
+                    <li>Contact the Director of Student and Financial Services, Chris Franczyk (204-582-3400) for possible alternatives.</li>
+                </div>
+
+            </div>
         </div>
         <!-- seanna's Part -->
-        <div class="container">
+        <div class="container" id="transport">
             <p class="heading">APPLICATION INTERVIEWS</p>
             <div class="content">
                 <p>The school's Administration will interview all new students together with their families and may interview returning<br>
@@ -108,7 +215,7 @@
                 <ul>
                     <li>Uniform shirt options for K-4 includes navy blue or red t-shirts or Faith Academy Hoodie.</li>
                     <li>Uniform shirt options for Grade 5-8 include navy, brown and black t-shirts and blue and black school hoodies.</li>
-                    <li>Uniform shirt options for the high school include black, navy, purple and brown school t-shirts; blue and black school<br>
+                    <li>Uniform shirt options for the high school include black, navy, purple and brown school t-shirts; blue and black school
                         hoodies.</li>
                 </ul>
                 <p class="end">T-shirts can be purchased at the offices for $10 each.</p>
@@ -116,11 +223,79 @@
             <div class="content">
                 <p class="end1">Hoodies are ordered occasionally throughout the year.  Check with the campus office for the next order date.</p>
             </div>
+        </div>
 
-        <div class="before-footer">
-            <span> <p> BEFORE & AFTER SCHOOL CARE</p> </span>
+        <div style="text-align: center; justify-content: center; background-color: rgb(173,216,230); width: 100%; padding: 30px 0;">
+            <h1>TRANSPORTATION</h1>
+            <p>Faith Academy endeavours to provide school bus service to those students who require this type of service and reside in<br>
+                specific catchment areas.  Due to the number of requests that are received each year not every request can be<br>
+                accommodated, and therefore a priority list has been developed to outline how the school will honour bus requests.</p>
+    
+                <p>·Priority #1 – is to accommodate families who reside more than 1.6 km from the Matheson Campus<br>
+                ·Priority #2 – is to accommodate students who are enrolled in Kindergarten to Grades 6 and live beyond the 1.6km <br>
+                    boundary.<br>
+                ·Priority #3 – is to accommodate students who are enrolled in Grades 7-9 and live beyond the 1.6km boundary.<br>
+                ·Priority #4 – is to accommodate students who are enrolled in Grades 10-12 and live beyond the 1.6km boundary.<br>
+                </p>
+            <p>Consideration will be given to students who do not reside close to Metro transit routes.</p>
+            <h2>INCLEMENT WEATHER- SEVERE WEATHER AND BUS CANCELLATIONS</h2>
+            <p>Sometimes, severe weather causes us to cancel buses. The general rule is that if the temperature combined with the wind<br>
+                chill is -45C or colder as registered at The Forks (as posted by Environment Canada at 6:00 a.m.), we cancel buses for<br>
+                the whole day but the school usually remains open.  Faith Academy follows the lead of all metro Winnipeg school<br>
+                divisions (specifically the Seven Oaks School Division) based on this rule.<br>
+            </p>
+            <p>Selected radio stations will also announce bussing cancellations. They usually broadcast cancellations every 15 minutes. <br>
+                You can also check local radio stations on the Internet.</p>
+            <div style="justify-content: space-between;">
+                <a style="color: #2f2e2e;" href="https://globalnews.ca/tag/cancellations/">CJOB 680 AM</a> 
+                <a style="color: #2f2e2e;" href="https://www.chvnradio.com/weather/cancellations">CHVN 95.1 FM</a>
+            </div>
+            <p>If we have not announced or posted a cancellation alert, buses are running.<br>
+            Please do not call our school offices or media outlets. Doing so ties up phone lines. Instead, please access the information<br>
+            as outlined above.</p>
+            <h3>TRANSPORTATION CANCELLATION PROCEDURES</h3>
+            <p>In the event of severe weather:</p>
+            <ul>
+                <li>Everyone is asked to listen to the media for announcements regarding bus cancellations and/or school closures</li>
+                <li>If transportation is cancelled in the morning, the cancellation will apply for the whole day.</li>
+                <li>If it is necessary to close the school early during the day because of severe weather, students will be dismissed early.<br>
+                    Those students using the bus service will be bused home.</li>
+                <li>The decision to close the school will be made by the Superintendent of Faith Academy in consultation with the Director <br>
+                    of Transportation.</li>
+            </ul>
+            <p>Limited busing is available for students.<br>
+            Please contact Chris Franczyk, Director of Student Services, ph:204-582-3400 for more information.
+            </p>
         </div>
-        </div>
+
+        <div class="txt-footer">
+            <h1> BEFORE & AFTER SCHOOL CARE </h1>
+            <p>Faith Academy has a before and after school program for students 
+               in Kindergarten to Grade 4 which allows parents to<br> drop children 
+               off before school starts and after school has finished.  The program 
+               starts at 7:55 am and all students must<br> be picked up by 4:55 pm.<br><br>
+               Parents must call and inform the school before their child(ren)
+               may participate in the program.  A fee is charged for each<br> day 
+               that the child is in the program which will be charged to the family 
+               through a monthly invoice.</p>
+            <div class="bg-text">
+               <div class="home"><label>Home</label>
+                  <a href="#transport"><input type="radio" name="button" checked class="active" style="margin-top:20px;"></a>
+               </div>
+               <div class="services"> <label>Service</label>
+                  <a href="#"> <input type="radio" name="button" class="active" style="margin-top:20px;"></a>
+               </div>
+               <div class="team"><label>Team</label>
+                  <a href="#"><input type="radio" name="button" class="active" style="margin-top:20px;"></a>
+               </div>
+               <div class="About"> <label>About</label>
+                  <a href="#"><input type="radio" name="button" class="active" style="margin-top:20px;"></a>
+               </div>
+               <div class="contact"><label>Contact</label>
+                  <a href="#"><input type="radio" name="button" class="active" style="margin-top:20px;"> </a>
+               </div>
+            </div>
+         </div>
     </div>
 </body>
 </html>
